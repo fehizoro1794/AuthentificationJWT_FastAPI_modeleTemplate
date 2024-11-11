@@ -1,0 +1,16 @@
+Dans un nouveau chat pour un projet independant:
+Voici le model de la table dans la base de données PostgreSQL:
+*Nom de table= users
+*Champs:
+	>id= id de l'utilisateur, primary key, serial
+	>username= VARCHAR(100), unique, not null 
+	>email= VARCHAR(100), unique, not null 
+	>password= VARCHAR(100), not null 
+	>role= VARCHAR(100), valeur par defaut: client
+	>is_active= boolean, valeur par defaut: true
+Créer un projet FastAPI et jinja2 avec:
+-Authentification JWT(login et inscription et logout) avec FastAPI et jinja2 pour l'affichage et SQLAlchemy et PostgreSQL
+N.B: Le login utilise l'email et le mot de passe
+-Apres le login d'un user: redirection vers une page hrml(jinja2) qui affiche "Bonjour [username de l'user]"
+et un lien "detail"
+-Quand l'user clique sur le lien detail: redirection vers une page html(jinja2) qui affiche toute les informations sur l'user dans la base de donnees(id, username, email, role, is_active)

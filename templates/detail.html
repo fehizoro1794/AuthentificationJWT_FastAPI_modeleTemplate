@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Détails de l'utilisateur</title>
+</head>
+<body>
+    <h2>Détails de l'utilisateur</h2>
+    <ul>
+        <li><strong>ID :</strong> {{ user.id }}</li>
+        <li><strong>Nom d'utilisateur :</strong> {{ user.username }}</li>
+        <li><strong>Email :</strong> {{ user.email }}</li>
+        <li><strong>Rôle :</strong> {{ user.role }}</li>
+        <li><strong>Actif :</strong> {{ user.is_active }}</li>
+    </ul>
+    <a href="/home">Retour à l'accueil</a>
+</body>
+</html>
